@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="国内旅行・デート・友達とのおでかけプランを、希望に合わせて丁寧に作成します。">
+<title>旅・デート・おでかけプラン作成</title>
+<style>
+:root{
+  --bg:#fffaf8;--card:#fff;--text:#332f32;--sub:#766b72;
+  --pink:#dd8798;--blue:#7ba8d8;--line:#eadfe3;--soft:#fff1f4;
+  --shadow:0 12px 30px rgba(70,50,60,.07)
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+a{text-decoration:none;color:inherit}.wrap{width:min(1080px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,250,248,.94);border-bottom:1px solid var(--line)}
+.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:800}.navlinks{display:flex;gap:18px;font-size:14px;color:var(--sub)}
+.hero{padding:74px 0;background:linear-gradient(135deg,#fff6f8,#f6fbff)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.badge{display:inline-block;background:#fff;border:1px solid var(--line);padding:6px 12px;border-radius:999px;color:var(--pink);font-weight:700;font-size:13px}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.18;margin:16px 0}
+h1 .pink{color:var(--pink)} h1 .blue{color:var(--blue)}
+.lead{font-size:18px;color:var(--sub)}
+.btn{display:inline-block;background:var(--pink);color:#fff;padding:13px 22px;border-radius:999px;font-weight:800;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}
+section{padding:68px 0}.title{text-align:center;margin-bottom:32px}.title h2{font-size:30px;margin:0 0 8px}.title p{margin:0;color:var(--sub)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card h3{margin-top:0}.price{font-size:30px;font-weight:900;color:var(--pink)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:6px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.num{width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:8px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+summary{font-weight:800;cursor:pointer}
+.contact{background:linear-gradient(135deg,#ffe9ef,#eef7ff);border:1px solid var(--line);border-radius:28px;padding:34px;text-align:center}
+.small{font-size:12px;color:var(--sub)} footer{padding:30px 0 44px;text-align:center;color:var(--sub);font-size:13px}
+@media(max-width:850px){.hero-grid,.grid3{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">旅・デート・おでかけプラン作成</div>
+    <nav class="navlinks">
+      <a href="#services">サービス</a>
+      <a href="#flow">流れ</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">相談</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge">国内旅行・デート・友達とのおでかけ</span>
+      <h1>あなたに合った<br><span class="pink">旅</span>・<span class="blue">おでかけ</span>プランを。</h1>
+      <p class="lead">移動・観光・食事・休憩まで含めて、無理なく楽しめるプランを丁寧にご提案します。</p>
+      <div class="tags">
+        <span class="tag">国内旅行</span><span class="tag">初デート</span><span class="tag">記念日</span>
+        <span class="tag">友達とのおでかけ</span><span class="tag">雨の日</span>
+      </div>
+      <a class="btn" href="#contact">相談する</a>
+    </div>
+    <div class="card">
+      <h3>こんな方におすすめ</h3>
+      <ul>
+        <li>行きたい場所はあるけど、回り方が分からない</li>
+        <li>移動時間まで含めて予定を組んでほしい</li>
+        <li>初デートや記念日で失敗したくない</li>
+        <li>友達と何をして過ごすか決まらない</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="title">
+      <h2>サービス</h2>
+      <p>目的に合わせて3つのプランをご用意しています。</p>
+    </div>
+    <div class="grid3">
+      <div class="card service-card">
+        <h3>✈️ 国内旅行プラン</h3>
+        <p>1泊2日・2泊3日など、移動・観光・食事・休憩まで含めた旅程を作成します。</p>
+        <div class="price">2,000円〜</div>
+        <p class="small">日帰り2,000円 / 1泊2日3,000円 / 2泊3日4,000円</p>
+      </div>
+      <div class="card service-card">
+        <h3>💗 デートプラン</h3>
+        <p>初デート、付き合いたて、記念日、雨の日など、関係性や雰囲気に合わせてご提案します。</p>
+        <div class="price">2,500円〜</div>
+        <p class="small">半日〜1日プラン 2,500円</p>
+      </div>
+      <div class="card service-card">
+        <h3>☕ 友達おでかけプラン</h3>
+        <p>カフェ、ショッピング、プラネタリウム、水族館などを組み合わせて、過ごしやすい流れを作ります。</p>
+        <div class="price">2,000円〜</div>
+        <p class="small">半日〜1日プラン 2,000円</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="title"><h2>有料オプション</h2></div>
+    <div class="grid3">
+      <div class="card"><h3>雨天時の代替プラン</h3><p>＋1,000円</p></div>
+      <div class="card"><h3>飲食店・カフェ候補3件追加</h3><p>＋500円</p></div>
+      <div class="card"><h3>別案をもう1プラン</h3><p>＋1,500円</p></div>
+      <div class="card"><h3>1日追加</h3><p>＋1,000円</p></div>
+      <div class="card"><h3>修正1回追加</h3><p>＋500円</p></div>
+      <div class="card"><h3>お急ぎ納品</h3><p>＋1,500円</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <div class="title"><h2>ご依頼から納品まで</h2></div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><strong>ご相談</strong><p>日程・エリア・予算などを伺います。</p></div>
+      <div class="step"><div class="num">2</div><strong>ヒアリング</strong><p>行きたい場所や雰囲気を確認します。</p></div>
+      <div class="step"><div class="num">3</div><strong>プラン作成</strong><p>移動や食事も含めて組み立てます。</p></div>
+      <div class="step"><div class="num">4</div><strong>初稿確認</strong><p>まず一度ご確認いただきます。</p></div>
+      <div class="step"><div class="num">5</div><strong>修正・納品</strong><p>1回無料修正後、完成版をお渡しします。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="title"><h2>修正について</h2></div>
+    <div class="card">
+      <p>作成したプランは、まず初稿として一度ご確認いただきます。</p>
+      <p>「もう少しゆったりしたい」「この場所を別のスポットに変更したい」「食事の時間をずらしたい」など、ご希望がありましたら<strong>1回まで無料で修正</strong>いたします。</p>
+      <p>2回目以降の修正は、有料オプション（＋500円）にて対応いたします。</p>
+      <p class="small">※最初にいただいたご希望から大きく内容が変わる場合は、追加料金をご相談させていただく場合があります。</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="title"><h2>よくある質問</h2></div>
+    <details><summary>行きたい場所がまだ決まっていなくても大丈夫ですか？</summary><p>大丈夫です。ざっくりしたご希望からでもご提案できます。</p></details>
+    <details><summary>移動時間も入れてもらえますか？</summary><p>はい。電車・バス・徒歩などの移動時間も含めて組み立てます。</p></details>
+    <details><summary>予約代行はしてもらえますか？</summary><p>予約代行は行っておりません。プラン作成・候補提案のみとなります。</p></details>
+    <details><summary>一度作ってもらった後に変更できますか？</summary><p>はい。1回まで無料で修正いたします。</p></details>
+    <details><summary>雨の日プランもお願いできますか？</summary><p>はい。有料オプションにて対応可能です。</p></details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>まずはお気軽にご相談ください</h2>
+      <p>国内旅行、デート、友達とのおでかけ。あなたに合ったプランを一緒に考えます。</p>
+      <a class="btn" href="https://x.com/" target="_blank" rel="noopener">Xから相談する</a>
+      <p class="small">※Xリンクは仮です。ご自身のプロフィールURLに差し替えてください。</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+  <p>© 旅・デート・おでかけプラン作成</p>
+  <p class="small">営業時間・料金・交通ダイヤ等は変更される場合があります。ご利用前に公式情報をご確認ください。</p>
+</div>
+</footer>
+</body>
+</html>
