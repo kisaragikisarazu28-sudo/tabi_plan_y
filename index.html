@@ -50,6 +50,21 @@ h1 .line3{font-size:.82em}
 
 .option-note{margin-top:10px;font-size:12px;line-height:1.7;color:var(--sub);background:#f8f6f1;border:1px solid #e3ddd2;border-radius:12px;padding:9px 10px}
 
+
+.contact-section{padding:76px 0;background:linear-gradient(180deg,#f8fafc 0%,#fbf8f3 100%)}
+.contact-card{background:#fff;border:1px solid #ddd8cf;border-radius:24px;padding:28px;box-shadow:0 14px 34px rgba(54,60,68,.07)}
+.contact-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:26px}
+.contact-flow>div{background:#faf9f6;border:1px solid #e3ded5;border-radius:16px;padding:18px 14px}
+.contact-flow span{display:inline-flex;width:28px;height:28px;border-radius:50%;align-items:center;justify-content:center;background:#596f83;color:#fff;font-weight:700;margin-bottom:10px}
+.contact-flow strong{display:block;color:#39424c;margin-bottom:5px}
+.contact-flow p{margin:0;color:var(--sub);font-size:12px;line-height:1.7}
+.contact-box{background:linear-gradient(135deg,#f6f1e8,#f4f7fa);border:1px solid #ddd5c7;border-radius:18px;padding:22px}
+.contact-box h3{margin-top:0;font-family:"Hiragino Mincho ProN","Yu Mincho","BIZ UDPMincho",serif;font-size:22px}
+.contact-btn{display:inline-flex;margin-top:10px}
+.contact-note{font-size:12px;color:var(--sub);margin:14px 0 0;line-height:1.7}
+@media(max-width:960px){.contact-flow{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.contact-flow{grid-template-columns:1fr}.contact-card{padding:20px 16px}.contact-box{padding:18px 16px}.contact-btn{width:100%;justify-content:center}}
+
 </style>
 
 </head>
@@ -330,16 +345,45 @@ h1 .line3{font-size:.82em}
   </div>
 </section>
 
-<section id="contact">
+
+<section id="contact" class="contact-section">
   <div class="wrap">
-    <div class="contact">
-      <h2>まずはお気軽にご相談ください</h2>
-      <p>国内旅行、デート、友達とのおでかけ。あなたに合ったプランを一緒に考えます。</p>
-      <a class="btn primary" href="http://my-site-101909-108840.square.site/" target="_blank" rel="noopener">お申し込み・決済へ</a>
-      <p class="small">※Squareの申込み・決済ページが開きます。</p>
+    <div class="title">
+      <span class="kicker">CONTACT</span>
+      <h2>お問い合わせ・ご相談</h2>
+      <p>「どのプランを選べばいいか分からない」「オプションを付けた場合の合計金額を知りたい」など、まずはお気軽にご相談ください。</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-flow">
+        <div><span>1</span><strong>お問い合わせ</strong><p>日程・行き先・人数・ご予算などをお知らせください。</p></div>
+        <div><span>2</span><strong>内容確認・お見積り</strong><p>基本プランとオプションを確認し、合計金額をご案内します。</p></div>
+        <div><span>3</span><strong>Squareでお支払い</strong><p>内容確定後、お客様専用の請求書または決済案内をお送りします。</p></div>
+        <div><span>4</span><strong>プラン作成開始</strong><p>お支払い確認後、ヒアリング内容をもとに作成します。</p></div>
+      </div>
+
+      <div class="contact-box">
+        <h3>メールでお問い合わせ</h3>
+        <p>下のボタンからメールを開き、分かる範囲でご記入ください。</p>
+        <ul class="check-list">
+          <li>お名前（ニックネーム可）</li>
+          <li>ご希望のプラン</li>
+          <li>日程・行き先・人数</li>
+          <li>ご予算や行きたい場所</li>
+          <li>追加したいオプション</li>
+        </ul>
+
+        <a class="btn primary contact-btn"
+           href="mailto:kisaragikisarazu.28@icloud.com?subject=%E6%97%85%E3%83%BB%E3%81%8A%E3%81%A7%E3%81%8B%E3%81%91%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87&body=%E3%80%90%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E3%83%97%E3%83%A9%E3%83%B3%E3%80%91%0A%0A%E3%80%90%E6%97%A5%E7%A8%8B%E3%80%91%0A%0A%E3%80%90%E8%A1%8C%E3%81%8D%E5%85%88%E3%80%91%0A%0A%E3%80%90%E4%BA%BA%E6%95%B0%E3%80%91%0A%0A%E3%80%90%E3%81%94%E4%BA%88%E7%AE%97%E3%80%91%0A%0A%E3%80%90%E8%A1%8C%E3%81%8D%E3%81%9F%E3%81%84%E5%A0%B4%E6%89%80%E3%83%BB%E3%81%94%E5%B8%8C%E6%9C%9B%E3%80%91%0A%0A%E3%80%90%E8%BF%BD%E5%8A%A0%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91%0A">
+          メールで相談する
+        </a>
+
+        <p class="contact-note">※お問い合わせだけでは料金は発生しません。内容と金額をご確認いただいた後に、お支払いをご案内します。</p>
+      </div>
     </div>
   </div>
 </section>
+
 </main>
 
 <footer>
